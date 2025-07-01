@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Baylanısıw ushın</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- progress barstle -->
+  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <!-- font wesome stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="top_container sub_pages">
+    <!-- header section starts -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>
+              55-sanlı ayrım pánlerge qánigelestirilgen mektep
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Bas bet <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">Mektep haqqında</a>
+                </li>       
+                <li class="nav-item">
+                  <a class="nav-link" href="teacher.html">Jańalıqlar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Baylanıs</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                <button class="btn my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div> <!-- Added this closing div tag -->
+        </nav>
+      </div>
+    </header>
+  </div>
+  <!-- end header section -->
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <h2 class="main-heading">Házir baylanısıń</h2>
+      <p class="text-center">Óz xabarıńızdı qaldırıń. Biz tez arada siz benen baylanısamız.</p>
+      <div class="">
+        <div class="contact_section-container">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <div class="contact-form">
+                <div>
+                  <input type="text" placeholder="Atıńız" id="name">
+                </div>
+                <div>
+                  <input type="text" placeholder="Telefon nomerińız" id="phone">
+                </div>
+                <div>
+                  <input type="email" placeholder="Email" id="email">
+                </div>
+                <div>
+                  <input type="text" placeholder="Xabarıńız" class="input_message" id="message">
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn_on-hover" onclick="submitForm()">Jiberıń</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      2024 site by Nursultan Xalmuratov and Sultan Oralbaev <br>
+      <a href="https://html.design/">55-mektep</a>
+    </p>
+  </section>
+  <!-- end footer section -->
+
+  <script>
+    function submitForm() {
+      var name = document.getElementById("name").value;
+      var phone = document.getElementById("phone").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+
+      // You can handle the form submission here, like sending the data to your server
+      console.log("Name: " + name);
+      console.log("Phone: " + phone);
+      console.log("Email: " + email);
+      console.log("Message: " + message);
+
+      // Display a thank you message
+      alert("Raxmat! Sizning murajatingiz qabul qilindi.");
+
+      // Optionally, you can reset the form after submission
+      document.getElementById("contactForm").reset();
+    }
+  </script>
+
+</body>
+
+</html>
